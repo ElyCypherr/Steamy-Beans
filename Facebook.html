@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="Website Icon" type="jpg" href="logo.png">
+  <title>Steamy Beans Facebook Page</title>
+  <style>
+   
+    body 
+    {
+      font-family: Arial, sans-serif;
+    }
+    
+    #header 
+    {
+      background-color: #3b5998;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    #content 
+    {
+      margin: 20px;
+    }
+    
+    #post-form 
+    {
+      margin-bottom: 10px;
+    }
+    
+    .post 
+    {
+      background-color: #f6f7f9;
+      border: 1px solid #dddfe2;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .post .author 
+    {
+      font-weight: bold;
+      color: #365899;
+    }
+    
+    .post .timestamp 
+    {
+      color: #888;
+      font-size: 12px;
+    }
+    
+    .post .message 
+    {
+      margin-top: 5px;
+    }
+
+    #profile 
+    {
+        margin: 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    #profile img 
+    {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    
+    #profile .username 
+    {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    #posts-container 
+    {
+        margin: 20px;
+    }
+    
+    .post 
+    {
+        border: 1px solid #dddfe2;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .post .image 
+    {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    
+    .post .caption 
+    {
+        margin-top: 5px;
+        font-weight: bold;
+    }
+
+    .post .description
+    {
+        margin-top: 10px;
+        font-weight: lighter;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>Steamy Beans Facebook Page</h1>
+  </div>
+  
+  <div id="content">
+    <div id="post-form">
+      <input type="text" id="author-input" placeholder="Your Name">
+      <input type="text" id="message-input" placeholder="What's on your mind?">
+      <button id="post-button">Post</button>
+    </div>
+    
+    <div id="posts-container"></div>
+  </div>
+  
+  <div id="profile">
+    <a href="web.html" class="logo">
+        <img src="logo.png" alt=" ">
+    </a>
+    <div class="username">Steamy Beans</div>
+  </div>
+  
+  <div id="posts-container">
+    <div class="post">
+      <img class="image" src="Product4.png" alt="">
+      <div class="caption">Steamy Beans</div>
+      <div class="description"><strong>🍓🥞 Calling all brunch enthusiasts and fruit lovers!🌟✨</strong>
+        Introducing the <Strong>Waffle Wonderland</Strong>💥🎉
+        —a harmonious fusion of golden, fluffy waffles and an abundance of 
+        vibrant, fresh fruits and berries. At Steamy Beans, we've taken the classic waffle to new heights
+        by creating a masterpiece that will captivate your senses and leave you craving for more. 
+        Prepare for a burst of flavors and textures that will make your brunch experience truly unforgettable. 🥞🍇</div>
+    </div>
+    
+    <div class="post">
+        <img class="image" src="Product5.jpg" alt="">
+        <div class="caption">Steamy Beans</div> 
+        <div class="description"><strong>🍩✨ Calling all donut lovers and sugar enthusiasts! ✨🌈</strong>
+          Introducing the <strong>Donut Paradise</strong> —a symphony of flavors, textures, and whimsical designs 
+          that will take your taste buds on an unforgettable journey. At Steamy Beans, we've mastered the art 
+          of crafting the perfect donut, and our Signature Donut Collection is a testament to our passion for 
+          culinary excellence. Brace yourself for a delightful experience that will make your sweetest dreams 
+          come true. 🌟🍩</div>
+      </div>
+    
+    <div class="post">
+        <img class="image" src="Product6.jpg" alt="">
+        <div class="caption">Steamy Beans</div>
+        <div class="description"> <strong>🌟🥐 Calling all cinnamon enthusiasts and pastry aficionados! ✨🍃</strong> Beat the heat in the most
+            refreshing and delightful way possible with our <strong>Cinnamania</strong>  at Steamy Beans! ✨🥤
+            Our talented bakers start by carefully crafting each batch of dough from scratch, using only the finest
+            ingredients. We roll out the dough to perfection, infusing it with a generous dusting of cinnamon 
+            and sugar, ensuring that every bite is a burst of sweet and spicy delight. The rolls are then
+            lovingly baked to a golden perfection, filling the air with the irresistible aroma of cinnamon. 
+            The final touch is a heavenly drizzle of velvety cream cheese frosting, adding a luscious and decadent
+            finish to these incredible creations. 🍯🍂
+        </div>
+    </div>
+
+  
+  <script>
+    // JavaScript code to handle posting and displaying posts
+    const postButton = document.getElementById('post-button');
+    const authorInput = document.getElementById('author-input');
+    const messageInput = document.getElementById('message-input');
+    const postsContainer = document.getElementById('posts-container');
+    
+    postButton.addEventListener('click', () => {
+      const author = authorInput.value;
+      const message = messageInput.value;
+      const timestamp = new Date().toLocaleString();
+      
+      if (author && message) {
+        const postElement = document.createElement('div');
+        postElement.className = 'post';
+        postElement.innerHTML = `
+          <div class="author">${author}</div>
+          <div class="timestamp">${timestamp}</div>
+          <div class="message">${message}</div>
+        `;
+        
+        postsContainer.appendChild(postElement);
+        
+        authorInput.value = '';
+        messageInput.value = '';
+      }
+    });
+  </script>
+</body>
+</html>

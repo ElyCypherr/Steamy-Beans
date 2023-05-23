@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+   <link rel="Website Icon" type="jpg"
+   href="logo.png">
+    <title>Steamy Beans Official Website</title> 
+
+    <!--FONT-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="WebsiteCSS.css">
+
+    <!-- WILL CHECK IF THERE IS A SPELLING ERROR -->
+    <input type="text" spellcheck="true">
+</head>
+<body>
+   
+<!--HEADER START-->
+
+<header class="header">
+        
+        <a href="#" class="logo">
+            <img src="logo.png" alt=" ">
+        </a>
+        
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#products">Products</a>
+            <a href="#feedbacks and reviews">Feedback and Reviews</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#blog">Blog</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Search Here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="Menu1.jpg" alt="">
+                <div class="content">
+                    <h3>Espresso</h3>
+                    <div class="price">₱110.00/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="Menu4.jpg" alt="">
+                <div class="content">
+                    <h3>White Russian</h3>
+                    <div class="price">₱190.00/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="Menu5.jpg" alt="">
+                <div class="content">
+                    <h3>Affogato</h3>
+                    <div class="price">₱165.00/-</div>
+                </div>
+            </div>    
+                <div class="cart-item">
+                    <span class="fas fa-times"></span>
+                    <img src="Menu3.jpg" alt="">
+                    <div class="content">
+                        <h3>Iced Matcha Latte</h3>
+                        <div class="price">₱175.00/-</div>
+                    </div>
+                </div>
+                <a href="#menu" class="btn" button onclick="Check()">checkout now</a>
+            </div>  
+
+</header>
+
+<!--HEADER END-->
+
+<!-- HOME SECTION STARTS -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Steamy Beans</h3> 
+        <p>"Bringing the heat to your cup"</p>
+        <a href="blog.html" class="btn">Get Yours Now!</a>
+    </div>
+
+</section>
+
+<!-- HOME SECTION ENDS -->
+
+<!-- ABOUT SECTION STARTS -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"><span>About</span> Us </h1>
+        <div class="row">
+            
+            <div class="image">
+                <img src="about (10).jpg" alt=""> 
+            </div>
+
+            <div class="content">
+                <h3>What makes steamy beans special?</h3>
+                <p> At steamy beans cafe, we pride ourselves on offering the best coffee blends and pastries. 
+                    Our coffee is special because of the care and attention that goes into every cup.
+                    We source the highest quality coffee beans, roast them in small batches, 
+                    and use the latest brewing techniques to extract the full flavor and aroma of the coffee. 
+                    This results in a rich and satisfying cup every time.</p>
+                <p> Our pastry chefs are also dedicated to creating unique and delicious treats that 
+                    perfectly complement our coffee blends.
+                    We believe that great coffee is more than just a beverage, it’s an art form. 
+                    We are committed to providing our customers with a coffee experience that is 
+                    second to none, and we invite you to join us on this journey. Try our coffee 
+                    today and taste the difference for yourself!
+                </p>
+                <a href="blog.html" class="btn" but>Learn More About US</a>
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- ABOUT SECTION ENDS -->
+
+<!-- MENU SECTION STARTS -->
+
+<section class="menu" id="menu">
+    <h1 class="heading"> Top <span> Selling </span>  menu </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="Menu1.jpg" alt="">
+            <h3>Espresso</h3>
+            <div class="price">₱110.00 <span>₱150.00</span></div>
+           <a href="#menu" class="btn" button onclick="Menu1()">add to cart na!</a>
+        </div>
+
+        <div class="box">
+            <img src="Menu2.jpg" alt="">
+            <h3>Iced Espresso</h3>
+            <div class="price">₱145.00 <span>₱160.00</span></div>
+            <a href="#menu" class="btn" button onclick="Menu2()">add to cart na!</a>
+        </div>
+
+        <div class="box">
+            <img src="Menu3.jpg" alt="">
+            <h3>Iced Matcha Latte</h3>
+            <div class="price">₱175.00 <span>₱200.00</span></div>
+            <a href="#menu" class="btn" button onclick="Menu3()">add to cart na!</a>
+        </div>
+
+        <div class="box">
+            <img src="Menu4.jpg" alt="">
+            <h3>White Russian</h3>
+            <div class="price">₱190.00 <span>₱210.00</span></div>
+            <a href="#menu" class="btn" button onclick="Menu4()">add to cart na!</a>
+        </div>
+
+        <div class="box">
+            <img src="Menu5.jpg" alt="">
+            <h3>Affogato</h3>
+            <div class="price">₱165.00 <span>₱180.00</span></div>
+            <a href="#menu" class="btn" button onclick="Menu5()">add to cart na!</a>
+        </div>
+
+        <div class="box">
+            <img src="Menu6.jpg" alt="">
+            <h3>Iced Chai Latte</h3>
+            <div class="price">₱180.00 <span>₱200.00</span></div>
+            <a href="#menu" class="btn" button onclick="Menu6()">add to cart na!</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MENU SECTION ENDS -->
+
+<!-- PRODUCTS SECTION STARTS -->
+
+    <section class="products" id="products">
+
+        <h1 class="heading">our <span>products</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#products" class="fas fa-shopping-cart" button onclick="Cart()"></a>
+                    <a href="#products" class="fas fa-heart" button onclick="Favourite()"></a>
+                    <a href="menu.html" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="Product1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Latte</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">₱150.00 <span>₱170.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#products" class="fas fa-shopping-cart" button onclick="Cart()"></a>
+                    <a href="#products" class="fas fa-heart" button onclick="Favourite()"></a>
+                    <a href="menu.html" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="Product2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Choco Fudge Frappé</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">₱175.00 <span>₱190.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#products" class="fas fa-shopping-cart" button onclick="Cart()"></a>
+                    <a href="#products" class="fas fa-heart" button onclick="Favourite()"></a>
+                    <a href="menu.html" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="Product3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Smores Frappé</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">₱175.00 <span>₱190.00</span></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- PRODUCT SECTION ENDS -->
+
+<!-- REVIEW SECTION STARTS -->
+
+<section class="feedbacks and reviews" id="feedbacks and reviews">
+
+   <h1 class="heading"> Loyal <span> Customer's </span>Review</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="q1.png" alt="" class="quote">
+            <p>
+                Forget the ordinary, because this coffee shop is all about embracing the quirky side of life! 
+                As soon as you step inside, you're greeted by walls adorned with quirky art, mismatched furniture, 
+                and a playful vibe that sets it apart from any other coffee shop. The baristas here are a 
+                delightful bunch, sporting colorful aprons and infectious smiles. The staff is warm, welcoming, and 
+                always ready to share a good joke or two. If you're looking for a coffee shop that guarantees a
+                good laugh alongside your caffeine fix, look no further—this place is a true gem! They're not only experts 
+                in brewing coffee but also masters of entertainment. Be prepared to have your drink prepared 
+                with a dash of flair and a side of laughter. If you're tired of the same old coffee 
+                routine and want a memorable experience, this is the place to be!
+            </p>
+            <img src="Isabella.jpg" class="user" alt="">
+            <h3>Isabella Müller</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="q1.png" alt="" class="quote">
+            <p>
+                Prepare to embark on a coffee adventure like no other at this extraordinary coffee shop!
+                From the moment I stepped through the door, I was transported into a whimsical wonderland of flavors.
+                The menu featured a plethora of unique coffee blends, each with its own delightful twist.
+                I opted for the "Toffee Tiramisu Latte," and it was pure magic in a cup. 
+                The presentation of the drinks was also impeccable, with intricate latte art that made 
+                it almost too beautiful to drink. The atmosphere was enchanting, with fairy lights twinkling 
+                overhead and cozy nooks to get lost in a book. The baristas were not only skilled but also 
+                passionate about their craft, and their expertise added to the overall experience. 
+                Whether you're a coffee aficionado or just looking for a delightful escape, this coffee
+                shop is an absolute must-visit!
+            </p>
+            <img src="Luca.jpg" class="user" alt="">
+            <h3>Luca Moretti</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="q1.png" alt="" class="quote">
+            <p>If you're searching for the epitome of coffee perfection, look no further than 
+                this incredible coffee shop. From the moment I took my first sip, I knew I had
+                discovered a coffee lover's paradise. The beans were clearly of the highest quality, 
+                resulting in a smooth and rich flavor that danced on my taste buds. The attention to 
+                detail was remarkable, from the precise temperature of the steamed milk to the perfectly 
+                balanced espresso shots. The baristas were not only passionate but also incredibly skilled, 
+                effortlessly creating works of art with every cup they served. The minimalist and modern 
+                decor provided a calming environment, perfect for savoring each sip. Trust me when I say 
+                that this coffee shop sets the bar impossibly high, and once you've experienced it, all
+                other coffee will pale in comparison. Don't miss out on this exquisite coffee experience!
+            </p>
+            <img src="Emma.jpg" class="user" alt="">
+            <h3>Emma Bianchi</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- REVIEW SECTION ENDS -->
+
+<!-- CONTACT SECTION STARTS -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>Contact</span> US </h1>
+
+    <div class="row">
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419702.
+        5384422819!2d133.340244293276!3d34.73225755605276!2m3!1f0!2f0!3f0!3m2!1i10
+        24!2i768!4f13.1!3m3!1m2!1s0x355405712ffba04f%3A0x10c3802660695766!2sOkayama
+        %2C%20Japan!5e0!3m2!1sen!2sph!4v1684409395814!5m2!1sen!2sph" allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <form action="" >
+            <h3>Get in touch with us</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="Your Name:">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="Your Email:">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="Your Number:">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-pen"></span>
+                <input type="text" placeholder="Leave a Note:">
+            </div>
+            <input type="submit" value="contact now" class="btn" button onclick="Submit()">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- CONTACT SECTION ENDS -->
+
+<!-- BLOG SECTION STARTS -->
+
+<section class="blog" id="blog">
+
+    <h1 class="heading"> our <span>steamy </span> story </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="blog1.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#blog" class="title">Steamy Beans</a>
+                <span>by: "The Caffeine Connoisseurs"</span>
+                <p>At Steamy Beans, we’re passionate about providing our customers with the
+                    highest quality coffee beans, brewed with precision and care.
+                    We’ve been in the coffee business for over a decade, and we’re proud 
+                    of the journey we’ve taken to get where we are today.</p>
+                    <a href="blog.html" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="blog2.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#blog" class="title">Steamy Beans</a>
+                <span>by: "The Caffeine Connoisseurs"</span>
+                <p>Our café is not just an ordinary coffee shop. 
+                    We pride ourselves on using premium ingredients that are
+                    sourced from local farmers, ensuring that our products are 
+                    of the highest quality. Our team of expert baristas and bakers use 
+                    their skills to create unique and delicious drinks and pastries that 
+                    cater to every taste bud</p>
+                    <a href="blog.html" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="blog3.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#blog" class="title">Steamy Beans</a>
+                <span>by: "The Caffeine Connoisseurs"</span>
+                <p>We understand that people have different preferences when it comes to 
+                    coffee and tea, and that’s why we offer a range of options, including
+                    decaf, organic, and fair trade products. Our goal is to provide a 
+                    convenient and enjoyable online café experience that you can rely 
+                    on for your daily caffeine fix.</p>
+                    <a href="blog.html" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- BLOG SECTION ENDS -->
+
+<!-- FOOTER SECTION STARTS -->
+
+<section class="footer">
+
+<div class="social">
+    <a href="Facebook.html" class="fab fa-facebook-f"></a>
+    <a href="Instagram.html" class="fab fa-instagram"></a>   
+    <a href="#footer" class="fab fa-telegram" button onclick="Telegram()"></a>
+    <a href="#footer" class="fab fa-google" button onclick="Google()"></a>
+</div>
+
+<div class="link">
+    <a href="#home">home</a>
+    <a href="#about">about</a>
+    <a href="#menu">menu</a>
+    <a href="#products">products</a>
+    <a href="#feedbacks and reviews">reviews</a>
+    <a href="#contact">contact</a>
+    <a href="blog.html">blog</a>
+</div>
+
+<div class="credit" a href="terms.html">created by: <span>"The Caffeine Connoisseurs"</span> | all rights reserved | <span><button id="openPopup" class="custom-button">Terms and Conditions</button> 
+    <div id="popupOverlay"> 
+     <div id="popupContent"> 
+      <h2>Terms and Conditions</h2> 
+      <br> 
+      <p>This is the content of the terms and conditions.</p> 
+      <br> 
+      <p> </p> 
+      <ul> 
+       <li> We collect personal information such as name, email address, and shipping address when you place an order or create an account on our café website. </li> 
+       <li> Non-personal information like cookies and usage data is gathered to enhance your browsing experience, track website performance, and improve our services. </li> 
+       <li> The personal information you provide is used to process your orders, fulfill your requests, and ensure a seamless online cafe experience. </li> 
+       <li> We analyze non-personal information to understand user behavior, customize website content, and tailor our marketing efforts. </li> 
+       <li> Your data security is a top priority, and we do not sell or share your personal information with third parties, unless required by law or necessary to provide our services to you. </li> 
+      </ul> 
+      <p></p> 
+      <br> 
+      <p>By using this website, you agree to the terms and conditions outlined above.</p> 
+      <br> <button id="closePopup" class="cbutton">Close</button> 
+     </div> 
+    </div> </span> </div>
+
+</section>
+
+<!-- FOOTER SECTION ENDS -->
+
+    <!--JAVASCRIPT-->
+    <script src="WebsiteJS.js"></script>
+</body>
+</html>
